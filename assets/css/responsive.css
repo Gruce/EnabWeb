@@ -1,0 +1,53 @@
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 1024px) {
+    .fs-5 {
+        font-size: 1rem!important;
+    }
+    .fs-3 {
+        font-size: 1rem!important;
+    }
+    .fs-2 {
+        font-size: 1.25rem!important;
+    }
+    .btn-numberpad{
+        padding: 0.1rem !important;
+    }
+    .pb-3, .py-3 {
+        padding-bottom: 0.5rem !important;
+    }
+    .pt-3, .py-3 {
+        padding-top: 0.5rem !important;
+    }
+    .form-control {
+        height: calc(1.25em + 1.25rem + 2px);
+    }
+    .mobile-padding{
+        padding: 0.5rem !important;
+    }
+    .btn-numberpad{
+        padding: 0rem !important;
+    }
+}
+
+@media (max-width: 1366px) and (orientation:portrait) {
+    .not-good-display{
+        display: block;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 1025px) and (max-width: 1600px) { 
+    .fs-3 {
+        font-size: 1.25rem!important;
+    }
+    .fs-2 {
+        font-size: 1.75rem!important;
+    }
+    .btn-numberpad{
+        padding: 0.1rem !important;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

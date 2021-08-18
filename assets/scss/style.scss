@@ -1,0 +1,182 @@
+body{
+    // background-color: #4158D0;
+    // background: linear-gradient(45deg, #4d20d4 30%, #20d4a7 100%) !important;
+
+    
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5688ff, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5688ff, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    height: 100vh;
+    margin: 0.1px !important;
+    font-family: "Tajawal", sans-serif !important;
+	color: #8c96a7;
+    direction: rtl;
+
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.main-container{
+    background-color: $t-1 !important;
+    margin: 65px 45px 0px 35px !important;
+    min-height: calc(100vh - 6rem) !important;
+    max-height: calc(100vh - 6rem) !important;
+    border-radius: $border-radius-lg !important;
+    padding: $spacer * 1.75;
+}
+
+
+.show-scroll {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.show-scroll::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+.show-scroll::-webkit-scrollbar-track {
+	/* box-shadow: inset 0 0 2px grey;  */
+	border-radius: 10px;
+}
+
+/* Handle */
+.show-scroll::-webkit-scrollbar-thumb {
+	background: #cdd7ec40;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+.show-scroll::-webkit-scrollbar-thumb:hover {
+	background: #cdd7ec60;
+}
+
+.list-group-item {
+    background-color: $t-3;
+}
+
+.bg-none{
+    background: #00000000 !important;
+}
+
+.dg-content{
+    text-align: right;
+}
+
+.dg-main-content{
+    background: $t-1 !important;
+    padding: $spacer * 2 !important;
+    backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);
+}
+
+label{
+    color: #d4d4d4;
+}
+
+.form-control{
+    background-color: #ffffff1f;
+    backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 0;
+}
+
+.form-control::placeholder {
+	color: #ddd;
+}
+
+.form-control:focus{
+    color: rgb(34, 34, 34);
+    background-color: #fffc;
+}
+
+.table-cards tbody tr td:first-child {
+	border-radius: 0 .75rem .75rem 0;
+}
+
+.table-cards tbody tr td:last-child {
+	border-radius: .75rem 0 0 .75rem;
+}
+
+.table-divider td {
+    background-color: #ffffff63 !important;
+    transition: .2s;
+}
+.table-divider:hover {
+    td{
+        background-color:#ffffffbb !important;
+    }
+}
+
+span, div {
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+.form-group{
+    margin-bottom: 0;
+}
+
+input{
+    border-radius: $r-1;
+}
+
+.toasted-container.top-left {
+    top: 5% !important;
+    left: 3% !important;
+}
+
+.v-select{
+    .vs__dropdown-toggle{
+        z-index: 10030;
+        background-color: #ffffff3d;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 0;
+        padding: 0.675rem;
+
+        .vs__clear{
+            margin-left: 8px;
+        }
+    }
+}
+
+.vs__dropdown-menu{
+    z-index: 999 !important;
+    position: relative !important;
+}
+
+.btn-check:checked + button, .btn-check:active + button, button:active, button.active, .show > button.dropdown-toggle{
+    background-color: $tb-1 !important;
+}
+.dropdown-custom{
+    button{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        border: 0;
+        background-color: $tb-1;
+        &:hover{
+            background-color: $tb-2;
+        }
+        &:focus{
+            background-color: $tb-2;
+        }
+    }
+    .dropdown-toggle::after{
+        display: none;
+    }
+    .dropdown-menu{
+        background: $tb-2;
+        .dropdown-item{
+            color: #ddd;
+            text-align: right;
+            &:hover{
+                background: $tb-2;
+            }
+        }
+    }
+}
